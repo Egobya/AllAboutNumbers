@@ -7,11 +7,11 @@ public class AllAboutNumbers
 
     Scanner keyboard = new Scanner(System.in);
 
-    int num1,num2, num3;
-    int highest =0;
-    int lowest =0;
-    int sum =0;
-    int product =0;
+    double num1,num2, num3;
+    double highest =0;
+    double lowest =0;
+    double sum =0;
+    double product =0;
     double average =0;
 
         System.out.println("please enter 3 numbers?");
@@ -43,7 +43,7 @@ public class AllAboutNumbers
         System.out.println("The average of the numbers is "+ averageRound);
 
 }
-public static int getHighest(int num1, int num2, int num3){
+public static double getHighest(double num1, double num2, double num3){
         if (num1 > num2){
             if (num1 > num3){
                 return num1;
@@ -60,7 +60,7 @@ public static int getHighest(int num1, int num2, int num3){
 
 
 }
-    public static int getLowest(int num1, int num2, int num3){
+    public static double getLowest(double num1, double num2, double num3){
         if (num1 < num2){
             if (num1 < num3){
                 return num1;
@@ -78,15 +78,15 @@ public static int getHighest(int num1, int num2, int num3){
 
     }
 
-public static int getSum(int num1, int num2, int num3){
+public static double getSum(double num1, double num2, double num3){
         return num1+num2+num3;
 
 }
-    public static int getproduct(int num1, int num2, int num3){
+    public static double getproduct(double num1, double num2, double num3){
         return num1*num2*num3;
 
     }
-    public static double getaverage(int num1, int num2, int num3){
+    public static double getaverage(double num1, double num2, double num3){
         double localSum = num1+num2+num3;
         return localSum/3;
 
